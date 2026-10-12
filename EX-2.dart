@@ -26,7 +26,7 @@ class BankAccount {
       throw Exception('Amount must be greater than zero!');
     }
     if (_balance - amount < 0) {
-      throw Exception('Your withdrawal was succesful');
+      throw Exception('Insufficient balance for withdrawal!');
     }
     _balance -= amount;
   }
